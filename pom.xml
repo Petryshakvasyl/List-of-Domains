@@ -96,6 +96,22 @@
             <version>5.0.8</version>
         </dependency>
 
+        <!-- JSTL -->
+
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- google API -->
+
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-customsearch</artifactId>
+            <version>v1-rev51-1.22.0</version>
+        </dependency>
+
     </dependencies>
 
 

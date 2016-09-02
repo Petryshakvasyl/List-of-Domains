@@ -24,8 +24,8 @@ import java.util.Properties;
  * Created by pevsat on 01.09.2016.
  */
 @Configuration
-@ComponentScan("ua.oril.pv")
 @EnableTransactionManagement
+@ComponentScan("ua.oril.pv")
 @PropertySource(value =  "classpath:hibernate.properties")
 public class AppConfig {
 
@@ -53,7 +53,7 @@ public class AppConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("ua.oril.pv.entity");
+        em.setPackagesToScan("ua.oril.pv");
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         em.setJpaProperties(additionalProperties());
