@@ -1,0 +1,29 @@
+#navb{
+    pudding-top: 20px;
+    width: 70%;
+    align: center;
+    margin: auto;
+    width: 70%;
+    min-width: 1000px;
+    background-color: #39b54a;
+    border-top:1px solid #ddd;
+}
+body{
+    align: center;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background: #39b54a;
+    color: #fff;
+    width: 70%;
+    align: center;
+    margin: auto;
+}
+
+
