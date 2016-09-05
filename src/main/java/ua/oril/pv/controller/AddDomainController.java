@@ -21,10 +21,10 @@ public class AddDomainController {
     @Autowired
     DomainService domainService;
 
-    @RequestMapping(value = "addDomain")
+    @RequestMapping(value = "/")
     public ModelAndView addDomains() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("add-domain");
+        modelAndView.setViewName("index");
         return modelAndView;
     }
 
