@@ -1,29 +1,90 @@
 #navb{
-    pudding-top: 20px;
-    width: 70%;
+    width: 100%;
     align: center;
     margin: auto;
-    width: 70%;
     min-width: 1000px;
-    background-color: #39b54a;
-    border-top:1px solid #ddd;
+    background-color: #87A43E;
+    border-top:4px solid #37595E;
+    padding: 10px;
 }
 body{
-    align: center;
-    margin: auto;
-    width: 70%;
-    height: 100%;
+
+    background-color: #159397;
 
 }
 .footer{
     position: fixed;
     bottom: 0;
     padding: 10px;
-    background: #39b54a;
-    color: #fff;
     width: 70%;
     align: center;
     margin: auto;
 }
 
+.table {
+	padding: 20px;
+	margin: auto;
+	text-align: center;
+}
 
+
+table, th, td {
+     text-align: center;
+     border: 2px solid #ddd;
+     border-collapse: collapse;
+     width: 50%;
+     padding: 10px;
+
+ }
+
+ th {
+      background-color: #009688;
+      color: white;
+  }
+.list-table{
+    margin-left: 300px;
+
+}
+.container{
+    margin: auto;
+}
+.wrapper{
+    width: 70%;
+    align: center;
+    height: 100%;
+    margin: auto;
+    background-color: #DFDCD8;
+}
+
+#img-footer{
+    width: 200px;
+    align: center;
+    margin: auto;
+}
+
+#add-domain{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    margin: -125px 0 0 -125px;
+    text-align:center;
+}
+#home-page{
+     width: 400px;
+     height: 250px;
+     position: absolute;
+     top: 50%;
+     left: 48%;
+     margin: -125px 0 0 -125px;
+}
+
+#home-logo{
+    width: 200px;
+    margin: -10px  0 -10px;
+}
+
+.nav-link{
+    color: #37595E;
+}

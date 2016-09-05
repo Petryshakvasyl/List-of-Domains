@@ -23,5 +23,9 @@
         <put-attribute name="body" value="/WEB-INF/views/list-of-domains.jsp"/>
     </definition>
 
+    <definition name="savedDomain" extends="default">
+        <put-attribute name="body" value="/WEB-INF/views/savedDomain.jsp"/>
+    </definition>
+
 
 </tiles-definitions>

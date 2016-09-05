@@ -1,6 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <link rel='stylesheet' href='resources/main.css'>
-
+<div>
+<br/>
+</div>
 <nav class="navbar navbar-default" id="navb">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -10,19 +12,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/home">Home</a>
+      <a class="navbar-brand" href="/home"><img id="home-logo" src="resources/img/home_logo.png"></a>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="addDomain">Add <span class="sr-only">(current)</span></a></li>
-        <li><a href="updateDomain">Update</a></li>
-        <li><a href="deleteDomain">Delete</a></li>
-        <li><a href="ListOfDomains">List of Domains</a></li>
+        <li> <a class="nav-link" href="ListOfDomains"><h4>All Domains</h4></a></li>
+        <li> <a class="nav-link" href="updateDomain"><h4>Update</h4></a></li>
+        <li> <a class="nav-link" href="deleteDomain"><h4>Delete</h4></a></li>
+
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Language</a></li>
+        <li><a href="#"><h4>Contacts</h4></a></li>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
