@@ -2,7 +2,6 @@ package ua.oril.pv.service;
 
 import org.springframework.stereotype.Service;
 import ua.oril.pv.entity.Domain;
-import ua.oril.pv.entity.DomainStatus;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
@@ -18,18 +17,7 @@ import java.net.URL;
 @Service
 public class DomainServiceImpl extends BaseServiceImpl<Domain>  implements DomainService{
 
-    public void addDomain(Domain domain) throws IOException {
-
-        if(isDomainSafe(domain)){
-            domain.setDomainStatus(DomainStatus.SAFE);
-            System.out.println(domain.getName() + " is SAFE");
-        }else {
-            domain.setDomainStatus(DomainStatus.DANGEROUS);
-            System.out.println(domain.getName() + " is DANGEROUS");
-        }
-        domainDao.create(domain);
-    }
-    private boolean isDomainSafe(Domain domain) throws IOException {
+      public boolean isDomainSafe(Domain domain) throws IOException {
 
         String portUrl = "https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyABZN36Ezh9x8apmfEtaNJTbjsj4k62oZE";
         URL url = new URL(portUrl);
@@ -48,7 +36,6 @@ public class DomainServiceImpl extends BaseServiceImpl<Domain>  implements Domai
                 "        'platformTypes':    ['WINDOWS']," +
                 "        'threatEntryTypes': ['URL']," +
                 "        'threatEntries': [" +
-
                 "           {\"url\": \"http://" + domain.getName() + "\"}" +
                 "       ]" +
                 "    }" +
@@ -60,15 +47,15 @@ public class DomainServiceImpl extends BaseServiceImpl<Domain>  implements Domai
         out.close();
 
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String receive = "";
-        int code = con.getResponseCode();
+        StringBuilder receive = new StringBuilder("");
         do {
             String line = in.readLine();
             if (line == null)
                 break;
-            receive += line;
+            receive.append(line);
         } while (true);
         in.close();
-       return  receive.equals("{}");
+        String responce = "{}";
+       return  responce.equals(receive.toString());
     }
 }

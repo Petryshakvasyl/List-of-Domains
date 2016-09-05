@@ -15,10 +15,6 @@
         <put-attribute name="body" value="/WEB-INF/views/index.jsp"/>
     </definition>
 
-    <definition name="add-domain" extends="default">
-        <put-attribute name="body" value="/WEB-INF/views/add-domain.jsp"/>
-    </definition>
-
     <definition name="list-of-domains" extends="default">
         <put-attribute name="body" value="/WEB-INF/views/list-of-domains.jsp"/>
     </definition>
@@ -27,5 +23,12 @@
         <put-attribute name="body" value="/WEB-INF/views/savedDomain.jsp"/>
     </definition>
 
+    <definition name="update-domain" extends="default">
+        <put-attribute name="body" value="/WEB-INF/views/update-domain.jsp"/>
+    </definition>
+
+    <definition name="contact-info" extends="default">
+        <put-attribute name="body" value="/WEB-INF/views/contact-info.jsp"/>
+    </definition>
 
 </tiles-definitions>

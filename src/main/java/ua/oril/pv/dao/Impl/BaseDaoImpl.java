@@ -52,7 +52,6 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
         return entityManager.merge(entity);
     }
 
-    @SuppressWarnings("unchecked")
     protected final Class<T> getEntityClass() {
         Class<?> entityClass = GenericTypeResolver.resolveTypeArgument(getClass(), BaseDaoImpl.class);
 

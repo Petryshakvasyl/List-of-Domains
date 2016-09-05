@@ -9,5 +9,4 @@ import ua.oril.pv.entity.Domain;
  */
 @Repository
 public class DomainDaoImpl extends BaseDaoImpl<Domain> implements DomainDao{
-
 }

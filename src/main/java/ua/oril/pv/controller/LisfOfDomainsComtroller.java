@@ -24,11 +24,6 @@ public class LisfOfDomainsComtroller {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("list-of-domains");
         List<Domain> listDomain = domainService.findAll();
-
-        for (Domain d: listDomain
-             ) {
-            System.out.println(d.getName());
-        }
         model.addAttribute("AllDomains", listDomain);
         return modelAndView;
     }

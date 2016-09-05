@@ -17,14 +17,15 @@
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li> <a class="nav-link" href="ListOfDomains"><h4>All Domains</h4></a></li>
-        <li> <a class="nav-link" href="updateDomain"><h4>Update</h4></a></li>
-        <li> <a class="nav-link" href="deleteDomain"><h4>Delete</h4></a></li>
-
+        <li> <a class="nav-link" href="ListOfDomains">
+       <h4><span class="glyphicon glyphicon-tasks"  ></span> All Domains</h4></a></li>
+        <li> <a class="nav-link" href="updateDomain">
+         <h4><span class="glyphicon glyphicon-repeat"  ></span> Update</h4></a></li>
+        <li> <a class="nav-link" href="/home">
+        <h4><span class="glyphicon glyphicon-hand-up"  ></span> Add</h4></a></li>
       </ul>
-
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><h4>Contacts</h4></a></li>
+        <li><a href="contactInfo"><h4>Contacts</h4></a></li>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

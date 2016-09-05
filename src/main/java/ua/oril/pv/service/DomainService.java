@@ -10,5 +10,5 @@ import java.io.IOException;
  */
 @Service
 public interface DomainService extends BaseService<Domain> {
-    public void addDomain(Domain domain) throws IOException;
+    public boolean isDomainSafe(Domain domain) throws IOException;
 }
